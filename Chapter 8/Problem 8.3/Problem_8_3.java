@@ -18,7 +18,7 @@ public class Problem_8_3{
 
 	public static void main(String[] args){
 		Problem_8_3 p = new Problem_8_3();
-		int arr[] = {-40,-20,-1,1,2,3,5,7,9,12,13};
+		int arr[] = {-40,-20,-1,1,2,3,4,7,9,12,13};
 		System.out.println(p.magicIndex(arr));
 	}
 }
