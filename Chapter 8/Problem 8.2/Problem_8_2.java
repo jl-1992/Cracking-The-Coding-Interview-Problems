@@ -38,9 +38,12 @@ public class Problem_8_2{
 	}
 
 	public static void main(String[] args){
+		final long startTime = System.nanoTime();
 		ArrayList<String> s = new ArrayList<String>();
 		s=findPath();
 		for(String t:s)
 			System.out.println(t);
+		final long endTime = System.nanoTime();
+		System.out.println("Total execution time: " + (endTime - startTime) );
 	}
 }
