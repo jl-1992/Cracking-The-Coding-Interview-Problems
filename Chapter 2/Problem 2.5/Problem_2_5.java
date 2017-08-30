@@ -1,5 +1,3 @@
-import java.lang.Math;
-
 public class Problem_2_5{
 	
 	public Node sumLists(Node a, Node b){
