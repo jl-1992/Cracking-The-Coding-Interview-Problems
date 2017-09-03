@@ -1,6 +1,9 @@
 import java.util.*;
 
-public class Problem_8_7{
+public class Problem_8_8{
+
+	HashSet<String> h = new HashSet<String>();
+	ArrayList<String> rem = new ArrayList<String>();
 
 
 	public ArrayList<String> perm(String s){
@@ -19,16 +22,21 @@ public class Problem_8_7{
 			for(int i=0;i<=t.length();++i){
 				String word = t.substring(0,i) + b + t.substring(i);
 				res.add(word);
+				if(h.add(word)==false)
+					rem.add(word);
 			}
 		}
 
+		for(String q : rem){
+			res.remove(q);
+		}
 
 		return res;
 	}
 
 	public static void main(String[] args){
-		Problem_8_7 p = new Problem_8_7();
-		ArrayList<String> a = p.perm("abcd");
+		Problem_8_8 p = new Problem_8_8();
+		ArrayList<String> a = p.perm("abb");
 		for(String s:a)
 			System.out.println(s);
 		System.out.println(a.size());
