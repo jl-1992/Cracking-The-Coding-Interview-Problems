@@ -3,13 +3,12 @@ import java.util.*;
 public class Problem_2_6{
 
 	public boolean isPalindrome(Node n){
-		int len=0, count=0;
+		int count=0;
 		String temp = "";
 		BitSet b = new BitSet(128);
 		HashMap<Character,Boolean> h = new HashMap<Character,Boolean>();
 
 		while(n!=null){
-			++len;
 			b.flip(Character.getNumericValue(n.data));
 			h.put(n.data,b.get(Character.getNumericValue(n.data)));
 			if(h.get(n.data)){
@@ -22,10 +21,10 @@ public class Problem_2_6{
 			n=n.next;
 		}
 
-		if(len%2==0)
+		if(temp.length()%2==0)
 			return false;
 
-		int mid = len/2;
+		int mid = temp.length()/2;
 
 		return h.get(temp.charAt(mid)) && count==1;
 
