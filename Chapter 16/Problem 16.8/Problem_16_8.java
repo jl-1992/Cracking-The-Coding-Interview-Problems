@@ -27,6 +27,6 @@ public class Problem_16_8{
 	public static void main(String[] args){
 		Problem_16_8 p = new Problem_16_8();
 
-		System.out.println(p.toEnglish(120000,100000));
+		System.out.println(p.toEnglish(11000,10000));
 	}
 }

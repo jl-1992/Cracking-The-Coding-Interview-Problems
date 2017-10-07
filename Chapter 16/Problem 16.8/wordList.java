@@ -36,14 +36,6 @@ public class wordList{
 		h.put(100, "hundred");
 		h.put(1000, "thousand");
 		h.put(10000, "ten thousand");
-		h.put(20000, "twenty thousand");
-		h.put(30000, "thirty thousand");
-		h.put(40000, "forty thousand");
-		h.put(50000, "fifty thousand");
-		h.put(60000, "sixty thousand");
-		h.put(70000, "seventy thousand");
-		h.put(80000, "eighty thousand");
-		h.put(90000, "ninety thousand");
 		h.put(100000, "hundred thousand");
 		h.put(1000000, "million");
 		h.put(1000000000, "billion");
